@@ -27,7 +27,9 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build -t graso/docker-graphql:0.0.2 .
+        docker build -t graso/docker-graphql:latest .
 
     - name: Push the Docker image
       run: |
         docker push graso/docker-graphql:0.0.2
+        docker push graso/docker-graphql:latest
